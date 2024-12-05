@@ -22,6 +22,6 @@ python main.py
 The script will connect to your Gmail inbox, search for emails containing "unsubscribe," and print the extracted links.
 
 ## Features:
-[x] Secure IMAP connection to your Gmail inbox
-[x] Extracts unsubscribe links from HTML email content
-[x] Handles errors gracefully and skips problematic emails
+-[x] Secure IMAP connection to your Gmail inbox
+-[x] Extracts unsubscribe links from HTML email content
+-[x] Handles errors gracefully and skips problematic emails
