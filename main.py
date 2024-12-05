@@ -29,15 +29,15 @@ def extract_links_from_html(html_content):
         print(f"Error parsing HTML: {e}")
         return []
 
-    def click_link(link):
-        try:
-            reponse = requests.get(link)
-            if response.staturs_code == 200:
-                print("Successfully visited", link) 
-            else:
-                print("Failed to visit", link, "error code", response.status_code)
-        except exception as e:
-            print("Error with", link, str(e))
+def click_link(link):
+    try:
+        response = requests.get(link)
+        if response.status_code == 200:
+            print("Successfully visited", link) 
+        else:
+            print("Failed to visit", link, "error code", response.status_code)
+    except Exception as e:
+        print("Error with", link, str(e))
 
 def searchForEmail():
     mail = connect_to_mail()
