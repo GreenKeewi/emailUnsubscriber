@@ -75,4 +75,5 @@ def searchForEmail():
     return links
 
 links = searchForEmail()
-print(links)
+for link in links:
+    click_link(link)
