@@ -6,8 +6,8 @@ EMAIL="your_email@gmail.com"
 PASSWORD="your_app_password"
 ```
 ## Important ❗:
-[]Password refers to a Google App Password, not your regular Gmail password.
-[]If you haven't set up an App Password before, you'll need to enable 2-Factor Authentication (2FA) on your Google account.
+1. Password refers to a Google App Password, not your regular Gmail password.
+2. If you haven't set up an App Password before, you'll need to enable 2-Factor Authentication (2FA) on your Google account.
 
 ## 2. Install Dependencies
 Ensure you have the required Python packages installed:
