@@ -3,6 +3,7 @@ import os
 import imaplib
 import email
 from bs4 import BeautifulSoup
+import requests
 
 load_dotenv()
 
@@ -27,6 +28,16 @@ def extract_links_from_html(html_content):
     except Exception as e:
         print(f"Error parsing HTML: {e}")
         return []
+
+    def click_link(link):
+        try:
+            reponse = requests.get(link)
+            if response.staturs_code == 200:
+                print("Successfully visited", link) 
+            else:
+                print("Failed to visit", link, "error code", response.status_code)
+        except exception as e:
+            print("Error with", link, str(e))
 
 def searchForEmail():
     mail = connect_to_mail()
