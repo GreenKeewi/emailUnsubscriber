@@ -74,6 +74,12 @@ def searchForEmail():
     mail.logout()
     return links
 
+def save_links(links):
+    with open("links.txt", "w") as f:
+        f.write("\n".join(links))
+
 links = searchForEmail()
 for link in links:
     click_link(link)
+
+save_links(links)
